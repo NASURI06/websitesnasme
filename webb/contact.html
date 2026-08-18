@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A - My website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Content -->
+    <div class="content">
+        <div class="contact-container">
+            <h1>Q&A - Community Questions & Comments</h1>
+            <p class="contact-intro">
+                Have questions about the 48 Groups or want to share your thoughts? Post your questions and comments here for the community to see!
+            </p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Question/Comment Title</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's your question about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Question or Comment</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Share your question or comment here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Post Question</button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+
+            <div class="qna-section">
+                <h2>Recent Questions & Comments</h2>
+                <p class="qna-subtitle">See what other fans are asking about</p>
+                
+                <div class="qna-list" id="qnaList">
+                    <div class="qna-item">
+                        <div class="qna-header">
+                            <h3>What's the best way to become an AKB48 fan?</h3>
+                            <div class="qna-meta">
+                                <span class="qna-author">By: Fan Name</span>
+                                <span class="qna-date">Today</span>
+                            </div>
+                        </div>
+                        <p class="qna-content">
+                            This is an example question posted by a community member. Questions and comments will appear here once they are submitted. You can browse through all the discussions to learn more about the 48 Groups and connect with other fans!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="groups.html">My Favourite Groups</a>
+            <a href="oshi.html">My Oshi List</a>
+            <a href="contact.html">Q&A</a>
+        </div>
+        <h1><a href="https://akb48.fandom.com/wiki/AKB48_Wiki" class="footer-link">My fandom favorite</a></h1>
+    </div>
+    <!-- Footer end -->
+
+    <!-- Navbar -->
+    <a href="index.html" class="home-fab" aria-label="Home">&#127968;</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <div class="navbar">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="index.html">Home</a></li>
+            <li class="nav-li"><a href="about.html">About</a></li>
+            <li class="nav-li"><a href="groups.html">Groups</a></li>
+            <li class="nav-li"><a href="oshi.html">Oshi</a></li>
+            <li class="nav-li active"><a href="contact.html">Q&A</a></li>
+        </ul>
+    </div>
+    <!-- Navbar end -->
+</body>
+</html>
